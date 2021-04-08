@@ -19,7 +19,7 @@ const { gates } = require('./gates')
 /* Récupération du Tableau de choix */
 const hidden = Array(gates.length).fill('?')
 let gatesHidden = hidden
-let gatesInit = hidden.join(' | ')
+//let gatesInit = hidden.join(' | ')
 
 
 
@@ -31,7 +31,7 @@ const n = randomInt(0, 3)
 /* Choix du Joueur */
 console.log(chalk.blueBright('\nPortes:  1 | 2 | 3'))
 let choix = readlineSync.keyInSelect(hidden, '\nVeuillez choisir une porte ":')
-let tabSav = []
+
 
 /* Hors context à rectifier, seul le choix est afficher alors qu'il faudrait que l'une des 2 autres portes s'affiche avec une Goat  */
 switch (choix) {
