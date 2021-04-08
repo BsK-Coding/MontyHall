@@ -21,31 +21,24 @@ const hidden = Array(gates.length).fill('?')
 let gatesHidden = hidden
 let gatesInit = hidden.join(' | ')
 
-//console.log(chalk.yellow('\n# Monty Hall Game #\n\n\t'), gatesInit)
+
 
 const car = 'car'
 
 /* RandomGates */
 const n = randomInt(0, 3)
-//gates[gates.indexOf(n)] = n.replace()
-//let gatesEnd = gateInit
-//console.log()
-/*
-for (let i = 0; 1 < gatesEnd.length; ++i) {
- 
-}
-*/
+
 /* Choix du Joueur */
 console.log(chalk.blueBright('\nPortes:  1 | 2 | 3'))
 let choix = readlineSync.keyInSelect(hidden, '\nVeuillez choisir une porte ":')
 let tabSav = []
 
+/* Hors context à rectifier, seul le choix est afficher alors qu'il faudrait que l'une des 2 autres portes s'affiche avec une Goat  */
 switch (choix) {
   case 1:
     gatesHidden[n] = car.replace()
     console.log('choixFait', gatesHidden)
 
-    //gatesInit[n] = gates.indexOf(n).replace(car)
     break
   case 2:
     gatesHidden[n] = car.replace()
